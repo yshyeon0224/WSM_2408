@@ -15,6 +15,7 @@ main {
     border: 2px solid #eee;
     border-radius: 8px;
     padding: 8px;
+    cursor: pointer;
 }
 
 #calendar {
@@ -34,6 +35,12 @@ main {
     align-items: center;
 }
 
+.date-grid-container .grid-item:hover {
+    border-radius: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
 .menu-grid-container {
     display: grid;
     grid-template-rows: repeat(3, minmax(min-content, max-content));
@@ -50,4 +57,8 @@ main {
 
 h1 {
     font-size: 1.25rem;
+}
+
+#breakfast, #lunch, #dinner {
+    font-size: 0.6rem;
 }
